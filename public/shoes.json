@@ -1,0 +1,62 @@
+[
+    {
+      "name": "Nike Air Max",
+      "price": "$120",
+      "image": "/images/n3.png",
+      "model": "Air Max 2021"
+    },
+    {
+      "name": "Adidas Ultraboost",
+      "price": "$180",
+      "image": "/images/n4.png",
+      "model": "Ultraboost 21"
+    },
+    {
+      "name": "Puma RS-X",
+      "price": "$110",
+      "image": "/images/n5.png",
+      "model": "RS-X 2021"
+    },
+    {
+      "name": "Reebok Classic",
+      "price": "$90",
+      "image": "/images/n2.png",
+      "model": "Classic 2021"
+    },
+    {
+      "name": "New Balance 990",
+      "price": "$150",
+      "image": "/images/n6.png",
+      "model": "990v5"
+    },
+    {
+      "name": "Asics Gel-Kayano",
+      "price": "$130",
+      "image": "/images/n7.png",
+      "model": "Gel-Kayano 27"
+    },
+    {
+      "name": "Under Armour HOVR",
+      "price": "$140",
+      "image": "/images/n8.png",
+      "model": "HOVR Phantom 2"
+    },
+    {
+      "name": "Converse Chuck Taylor",
+      "price": "$60",
+      "image": "/images/n9.png",
+      "model": "Chuck Taylor All Star"
+    },
+    {
+      "name": "Under Armour HOVR",
+      "price": "$140",
+      "image": "/images/w7.png",
+      "model": "HOVR Phantom 2"
+    },
+    {
+      "name": "Converse Chuck Taylor",
+      "price": "$60",
+      "image": "/images/w8.png",
+      "model": "Chuck Taylor All Star"
+    }
+  ]

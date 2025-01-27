@@ -1,0 +1,77 @@
+.registration-form {
+  width: 200%;
+  max-width: 300px; /* Increase max width for the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 125px; /* Add padding inside the form */
+  margin-top: 100px; /* Add margin to the top to push the form down */
+  background-color: #fff; /* White background for the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+}
+
+.registration-form h2 {
+  color: #0d0141; /* Dark blue color */
+  font-size: 30px; /* Adjust the font size */
+  margin-bottom: 20px; /* Add margin to the bottom */
+  animation: slideIn 1s ease-in-out; /* Add slide-in animation */
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1.5s ease-in-out; /* Add fade-in animation */
+}
+
+.registration-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.registration-form input,
+.registration-form select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease; /* Add transition for border color */
+}
+
+.registration-form input:focus,
+.registration-form select:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+.registration-form button {
+  padding: 10px 20px;
+  background-color: #180377;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background color and transform */
+}
+
+.registration-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
