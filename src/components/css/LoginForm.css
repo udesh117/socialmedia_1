@@ -3,27 +3,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5px;
+    margin-bottom: 50px;
     animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
   }
   
-  .App-logo {
-    width: 150px; /* Adjust the width */
-    height: 150px; /* Adjust the height */
-    border-radius: 50%; /* Make the logo round */
-    margin-right: 10px;
-    transition: transform 0.3s ease; /* Add transition for hover effect */
-  }
-  
-  .App-logo:hover {
-    transform: scale(1.1); /* Slightly enlarge the logo on hover */
-  }
+
+ 
 
 .login-form {
   width: 100%;
-  max-width: 800px; /* Increase max width for the form */
-  margin: 35px auto; /* Center the form horizontally */
-  padding: 60px; /* Increase padding for spacing */
+  max-width: 300px; /* Increase max width for the form */
+  margin: 300px auto; /* Center the form horizontally */
+  padding: 50px; /* Increase padding for spacing */
   border: 1px solid #ccc;
   border-radius: 10px; /* Increase border radius for a softer look */
   background-color: #ffffff; /* White background for the form */

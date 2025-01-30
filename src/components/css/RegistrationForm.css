@@ -2,8 +2,8 @@
   width: 200%;
   max-width: 300px; /* Increase max width for the form */
   margin: 0 auto; /* Center the form horizontally */
-  padding: 125px; /* Add padding inside the form */
-  margin-top: 100px; /* Add margin to the top to push the form down */
+  padding: 100px; /* Add padding inside the form */
+  margin-top: 200px; /* Add margin to the top to push the form down */
   background-color: #fff; /* White background for the form */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
   border-radius: 10px; /* Rounded corners */

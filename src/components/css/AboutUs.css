@@ -14,7 +14,7 @@
   height: 80%; /* Maintain aspect ratio */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-  margin-top: 155px;
+  margin-top: 175px;
   margin-left: 160px;
   margin-bottom: 150px; 
   margin-right: 200px;/* Add margin to push the video down */
@@ -51,7 +51,7 @@
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-top: 1050px; /* Add margin to move the button down */
+  margin-top: 1180px; /* Add margin to move the button down */
   margin-right: 10px; /* Add margin to separate buttons */
 }
 

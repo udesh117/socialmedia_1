@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { CartContext } from './CartContext';
 import "../css/Header.css"; // Import the CSS file
 
-const Header = () => {
+const Header = ({ onSearch, onFilter }) => {
+  const { cart } = useContext(CartContext);
+  const [showCart, setShowCart] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filter, setFilter] = useState('');
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+    onSearch(e.target.value);
+  };
+
+  const handleFilterChange = (e) => {
+    setFilter(e.target.value);
+    onFilter(e.target.value);
+  };
+
   return (
     <header>
       <div className="special-offer">
@@ -10,7 +26,7 @@ const Header = () => {
       </div>
       <div className="nav-links">
         <a href="#">Contact</a>
-        <a href="#">Cart</a>
+        <Link to="/cart">Cart ({cart.length})</Link>
         <Link to="/RegistrationForm">Login</Link>
       </div>
       <nav className="main-nav">
@@ -24,11 +40,40 @@ const Header = () => {
           <li><Link to="/sale">Sale</Link></li>
         </ul>
         <div className="icons">
-          <i className="fas fa-user"></i>
-          <i className="fas fa-shopping-cart"></i>
-          <i className="fas fa-search"></i>
+        <Link to="/login">
+            <i className="fas fa-user"></i>
+          </Link>
+        </div>
+        <div className="search-filter">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={searchQuery}
+            onChange={handleSearchChange}
+          />
+          <select value={filter} onChange={handleFilterChange}>
+            <option value="">All</option>
+            <option value="men">Men</option>
+            <option value="women">Women</option>
+          </select>
         </div>
       </nav>
+      {showCart && (
+        <div className="cart-dropdown">
+          <h3>Shopping Cart</h3>
+          {cart.length === 0 ? (
+            <p>Your cart is empty</p>
+          ) : (
+            <ul>
+              {cart.map((item, index) => (
+                <li key={index}>
+                  {item.name} - {item.price}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
     </header>
   );
 };

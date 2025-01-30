@@ -1,0 +1,71 @@
+.sale-page {
+    padding: 20px;
+    text-align: center;
+    margin-top: 145px;
+  }
+
+  .background-image {
+    width: 80%; /* Adjust the width to make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    margin-top: 1px; /* Add margin to push the image down */
+  }
+  
+  .sale-page h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .sale-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .sale-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .sale-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .sale-image {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .sale-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .sale-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }

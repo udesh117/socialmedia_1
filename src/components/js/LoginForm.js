@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../css/LoginForm.css';
-import logo from '../logo.png'; // Import the logo image
+// Import the logo image
 
 const LoginForm = () => {
   const [formData, setFormData] = useState({
@@ -30,7 +30,7 @@ const LoginForm = () => {
   return (
     <div className="login-form">
       <div className="header">
-        <img src={logo} alt="Logo" className="App-logo" /> {/* Add the logo */}
+     
         <h2>Login</h2>
       </div>
       <form onSubmit={handleSubmit}>
